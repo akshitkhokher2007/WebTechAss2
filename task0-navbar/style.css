@@ -1,0 +1,64 @@
+/* ---------- Base reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  display: flex;               /* turns the header into a flex container */
+  justify-content: space-between; /* logo goes left, links go right */
+  align-items: center;         /* vertically centers logo + links */
+  padding: 1rem 2rem;
+  background-color: #1f2937;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar__logo {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar__links {
+  display: flex;        /* the <ul> itself is also a flex container */
+  align-items: center;
+  gap: 1.8rem;           /* spacing between links, no margin hacks needed */
+  list-style: none;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__links a:hover {
+  color: #4f9dff;
+}
+
+/* ---------- Page content below the navbar ---------- */
+
+.page-content {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.6;
+}
+
+.page-content code {
+  background: #e5e7eb;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

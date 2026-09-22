@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.page-content h1 {
+  margin-bottom: 0.4rem;
+}
+
+.page-content > p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* ---------- Gallery grid ---------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-auto-rows: 220px;                  /* equal-height rows */
+  gap: 12px;                              /* spacing between images */
+}
+
+.gallery__item {
+  position: relative;   /* anchor point for the absolutely-positioned caption */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.08); /* subtle zoom on hover */
+}
+
+.gallery__item figcaption {
+  position: absolute;
+  inset: 0;                 /* shorthand for top/right/bottom/left: 0 */
+  display: flex;
+  align-items: flex-end;
+  padding: 0.8rem;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery__item:hover figcaption {
+  opacity: 1; /* caption fades in only on hover */
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

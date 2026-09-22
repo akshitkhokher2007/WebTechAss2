@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+.page-content {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.6;
+}
+
+.page-content h1 {
+  margin-bottom: 0.4rem;
+}
+
+.page-content > p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* ---------- Card row (Flexbox) ---------- */
+
+.card-row {
+  display: flex;
+  gap: 1.5rem;          /* consistent spacing between cards */
+  align-items: stretch;  /* default value, but explicit = equal height cards */
+}
+
+.card {
+  flex: 1;                       /* each card grows/shrinks equally */
+  display: flex;
+  flex-direction: column;        /* image on top, body below, stacked */
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* hover effect required by the task: a small "lift" */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;   /* keeps images uncropped-looking even if ratios differ */
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;                 /* pushes the button to the bottom of every card */
+  padding: 1.2rem;
+}
+
+.card__title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  color: #555;
+  font-size: 0.92rem;
+  flex: 1;                 /* fills space so buttons line up across cards */
+  margin-bottom: 1rem;
+}
+
+.card__btn {
+  align-self: flex-start;
+  border: none;
+  background: #4f9dff;
+  color: white;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.card__btn:hover {
+  background: #2f7fe0;
+}
+
+/* ---------- Small responsive touch ---------- */
+@media (max-width: 700px) {
+  .card-row {
+    flex-direction: column;
+  }
+}

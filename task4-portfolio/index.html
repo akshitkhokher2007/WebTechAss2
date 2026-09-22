@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 - Portfolio Page (Flexbox + Grid)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER uses FLEXBOX for the nav bar -->
+  <header class="navbar">
+    <div class="navbar__logo">MyPortfolio</div>
+    <nav>
+      <ul class="navbar__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN uses CSS GRID: projects column + sidebar column -->
+  <main class="main-grid">
+
+    <section class="projects">
+      <h1>My Projects</h1>
+
+      <!-- each project card uses FLEXBOX internally -->
+      <article class="project-card">
+        <img src="https://picsum.photos/seed/proj1/300/180" alt="Project 1 preview" />
+        <div class="project-card__info">
+          <h2>Weather App</h2>
+          <p>A small app that fetches live weather data using a public API.</p>
+          <button>View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="https://picsum.photos/seed/proj2/300/180" alt="Project 2 preview" />
+        <div class="project-card__info">
+          <h2>Task Tracker</h2>
+          <p>A to-do list app with drag-and-drop, built with vanilla JS.</p>
+          <button>View Project</button>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="https://picsum.photos/seed/proj3/300/180" alt="Project 3 preview" />
+        <div class="project-card__info">
+          <h2>Recipe Finder</h2>
+          <p>Search recipes by ingredient, built with Flexbox and Grid layouts.</p>
+          <button>View Project</button>
+        </div>
+      </article>
+    </section>
+
+    <aside class="info-sidebar">
+      <h2>About Me</h2>
+      <p>
+        I'm a student learning frontend development. This portfolio shows
+        the layouts I practiced with Flexbox and CSS Grid.
+      </p>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3 (Flexbox & Grid)</li>
+        <li>JavaScript (basics)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 MyPortfolio — Built for Assignment #2</p>
+  </footer>
+
+</body>
+</html>

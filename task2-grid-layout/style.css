@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+}
+
+/* ---------- Grid layout ---------- */
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+
+  /* 3 rows: header auto-height, main content takes remaining space, footer auto-height */
+  grid-template-rows: 80px 1fr 60px;
+
+  /* 2 columns: sidebar fixed width, main content flexible */
+  grid-template-columns: 220px 1fr;
+
+  /* This is what actually maps each area name to a row/column position */
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+
+  gap: 10px;
+}
+
+.area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+.area--header {
+  grid-area: header;   /* matches the name used in grid-template-areas */
+  background-color: #1f2937;
+}
+
+.area--sidebar {
+  grid-area: sidebar;
+  background-color: #374151;
+}
+
+.area--main {
+  grid-area: main;
+  background-color: #4f9dff;
+}
+
+.area--footer {
+  grid-area: footer;
+  background-color: #1f2937;
+}
+
+/* ---------- Responsive: stack everything on small screens ---------- */
+@media (max-width: 700px) {
+  .layout {
+    grid-template-rows: 80px auto auto 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}

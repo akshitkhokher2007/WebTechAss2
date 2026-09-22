@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1 - Card Row (Flexbox)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page-content">
+    <h1>Task 1 — Card Row</h1>
+    <p>Three cards in a row, equal height, with a gap and a hover effect.</p>
+
+    <!-- .card-row is the flex container. Each .card is a flex item -->
+    <section class="card-row">
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/webdev1/400/220" alt="Web development illustration" />
+        <div class="card__body">
+          <h2 class="card__title">Frontend Basics</h2>
+          <p class="card__text">
+            Learn how HTML, CSS and the DOM work together to build the pages
+            you use every day.
+          </p>
+          <button class="card__btn">Read more</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/webdev2/400/220" alt="Responsive design illustration" />
+        <div class="card__body">
+          <h2 class="card__title">Responsive Design</h2>
+          <p class="card__text">
+            Flexbox and Grid let you build layouts that adapt to any screen
+            size without a single float.
+          </p>
+          <button class="card__btn">Read more</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/seed/webdev3/400/220" alt="Javascript illustration" />
+        <div class="card__body">
+          <h2 class="card__title">Interactivity</h2>
+          <p class="card__text">
+            Add behaviour to your page with JavaScript events, once the
+            layout foundation is solid.
+          </p>
+          <button class="card__btn">Read more</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+</body>
+</html>
