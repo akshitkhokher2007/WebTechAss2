@@ -84,7 +84,6 @@ card.
 
 ## Summary of My Work Process
 
-_[Write 3-5 sentences here, for example:]_
 
 I started with the simpler Flexbox tasks (navbar and card row) to get
 comfortable with `justify-content`, `align-items`, and `gap`. Then I moved
