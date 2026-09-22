@@ -103,7 +103,7 @@ Each task is a static HTML/CSS page — no build tools required.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   https://github.com/akshitkhokher2007/WebTechAss2.git
    ```
 2. Open any task's `index.html` file directly in your browser, or use the
    VS Code "Live Server" extension for auto-reload while editing.
