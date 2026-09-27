@@ -39,8 +39,8 @@ Three cards in a flex row, equal height, consistent gaps, with a hover
 
 📁 [`/task1-cards`](./task1-cards)
 
-**Screenshot:**
-`![Card row screenshot](./screenshots/task1-cards.png)`
+<img width="834" height="594" alt="Screenshot 2026-09-28 at 1 08 46 AM" src="https://github.com/user-attachments/assets/53931fbf-710d-4175-a7a0-f9097dc47c94" />
+
 
 ---
 
@@ -52,8 +52,8 @@ A full-page layout (header, sidebar, main, footer) built using
 
 📁 [`/task2-grid-layout`](./task2-grid-layout)
 
-**Screenshot:**
-`![Grid layout screenshot](./screenshots/task2-grid-layout.png)`
+<img width="837" height="656" alt="Screenshot 2026-09-28 at 1 09 28 AM" src="https://github.com/user-attachments/assets/7416d46e-e8f2-43b6-8b4f-bfba2c26d8c2" />
+
 
 ---
 
@@ -63,8 +63,8 @@ on hover.
 
 📁 [`/task3-gallery`](./task3-gallery)
 
-**Screenshot:**
-`![Gallery screenshot](./screenshots/task3-gallery.png)`
+<img width="829" height="651" alt="Screenshot 2026-09-28 at 1 10 14 AM" src="https://github.com/user-attachments/assets/c1001c3c-c005-4bba-9b9d-a8c0eaf02405" />
+
 
 ---
 
@@ -77,8 +77,7 @@ card.
 
 📁 [`/task4-portfolio`](./task4-portfolio)
 
-**Screenshot:**
-`![Portfolio screenshot](./screenshots/task4-portfolio.png)`
+<img width="822" height="650" alt="Screenshot 2026-09-28 at 1 10 52 AM" src="https://github.com/user-attachments/assets/fe5f0fd5-e583-497d-96ad-0a91ee30ecb7" />
 
 ---
 
