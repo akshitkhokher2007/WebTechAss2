@@ -1,7 +1,8 @@
 # Assignment #2 — Advanced CSS (Flexbox & Grid)
 
-**Name:** _[Your Full Name]_
-**Group:** _[Your Group Number]_
+**Name:** _AKSHIT KHOKHER_
+**Group:** _IT-2504<img width="833" height="384" alt="Screenshot 2026-09-28 at 1 06 00 AM" src="https://github.com/user-attachments/assets/d2a97da1-fee5-42ed-82b6-f8c8730d9e57" />
+_
 
 ## About This Project
 
